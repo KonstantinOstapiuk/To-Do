@@ -17,6 +17,8 @@ const addDeleteFFunctionToBtn = () => {
     })
 }
 
+addDeleteFFunctionToBtn()
+
 
 const createTask = (title, date) => {
     const taskHtml = `
@@ -56,6 +58,7 @@ createBtn.addEventListener('click', () => {
     taskNameInp.value = null
     taskDateInp.value = null
     localStorage.setItem('tasks', allTasks)
+    addDeleteFFunctionToBtn()
     
 })
 
